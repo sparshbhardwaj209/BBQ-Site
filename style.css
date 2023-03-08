@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+}
+
+.left-side{
+    position: relative;
+    width: 50%;
+}
+
+#bg-left-image{
+    position: absolute;
+    background-image: url("images/bbq-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-shadow: 1px 1px black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.98;
+    font-size: 18px;
+}
+
+#make-header{
+    /* border: 1px solid white; */
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    /* justify-content: center; */
+}
+
+
+#inner-header{
+    font-weight: bold;
+}
+
+#join-header{
+    /* margin: 0; */
+    /* border: 1px solid white; */
+    color: orangered;
+    padding: 20px;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+/* Right side */
+
+.right-side{
+    position: relative;
+    float: right;
+    width: 50%;
+}
+
+#bg-right-image{
+    position: absolute;
+    background: white;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* padding: 20px; */
+    /* margin: 0; */
+    /* margin: 50px; */
+}
+
+#right-header{
+    font-size: 40px;
+    font-family: serif;
+    margin: 4px auto;
+    font-weight: 800;
+    color: black;
+}
+
+#register-today{
+    margin: 4px auto;
+    font-size: 20px;
+    color: red;
+}
+
+.para{
+    text-align: justify;
+    padding: 50px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: serif; */
+}
+
+input{
+    margin: 4px;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+#section{
+    padding: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    color: white;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 115, 0);
+}
+
+#caution{
+    text-align: center;
+    margin: 2px;
+}
+
+
+@media all and (max-width: 800px){
+    
+    #make-header{
+        font-size: 20px;
+    }
+
+    #join-header{
+        font-size: 15px;
+    }
+
+    #right-header{
+        font-size: 18px;
+    }
+
+    #register-today{
+        font-size: 15px;
+    }
+
+    .para{
+        padding: 5px;
+        margin: 2px 1px;
+    }
+
+    #caution{
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 450px){
+    .para{
+        font-size: 13px;
+    }
+}
